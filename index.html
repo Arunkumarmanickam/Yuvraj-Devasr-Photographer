@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Devasr — Cinematic Photography & Films</title>
+  <meta name="description" content="Premium wedding photography, pre/post-wedding shoots, baby shower photography, and short films.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Yuvraj Devasr">
+        Yuvraj <span>Devasr</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/video/2022/10/23/136139-764371523_large.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Yuvraj Devasr" class="hero-logo">
+      <h1 class="hero-brand-name">Yuvraj <span>Devasr</span></h1>
+      <p>Capturing life's most beautiful moments — from intimate weddings to joyful celebrations — with a cinematic eye and timeless elegance.</p>
+      <a href="gallery.html" class="btn btn-primary">Explore Portfolio</a>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED SLIDESHOW ========== -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <span class="section-label reveal">Featured Work</span>
+        <h2 class="reveal reveal-delay-1">Recent Masterpieces</h2>
+      </div>
+
+      <div class="slideshow reveal" id="slideshow">
+        <div class="slideshow-track">
+          <div class="slideshow-slide active" data-index="0">
+            <img src="https://picsum.photos/seed/slide-pw/1200/650" alt="Pre-wedding shoot">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Pre-Wedding</span>
+              <h3>Love in Every Frame</h3>
+            </div>
+          </div>
+          <div class="slideshow-slide" data-index="1">
+            <img src="https://picsum.photos/seed/slide-wed/1200/650" alt="Wedding photography">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Wedding</span>
+              <h3>The Grand Celebration</h3>
+            </div>
+          </div>
+          <div class="slideshow-slide" data-index="2">
+            <img src="https://picsum.photos/seed/slide-pwe/1200/650" alt="Post-wedding shoot">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Post-Wedding</span>
+              <h3>Ever After</h3>
+            </div>
+          </div>
+          <div class="slideshow-slide" data-index="3">
+            <img src="https://picsum.photos/seed/slide-bs1/1200/650" alt="Baby shower celebration">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Baby Shower</span>
+              <h3>Joyful Beginnings</h3>
+            </div>
+          </div>
+          <div class="slideshow-slide" data-index="4">
+            <img src="https://picsum.photos/seed/slide-bs2/1200/650" alt="Baby shower gifts">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Baby Shower</span>
+              <h3>Celebrating New Life</h3>
+            </div>
+          </div>
+          <div class="slideshow-slide" data-index="5">
+            <img src="https://picsum.photos/seed/slide-sf/1200/650" alt="Cinematic short film">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <span class="slide-category">Short Films</span>
+              <h3>Stories in Motion</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideshow-controls">
+          <div class="slideshow-dots">
+            <button class="slideshow-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="slideshow-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="slideshow-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="slideshow-dot" data-slide="3" aria-label="Slide 4"></button>
+            <button class="slideshow-dot" data-slide="4" aria-label="Slide 5"></button>
+            <button class="slideshow-dot" data-slide="5" aria-label="Slide 6"></button>
+          </div>
+          <button class="slideshow-btn slideshow-prev" aria-label="Previous">&#8592;</button>
+          <button class="slideshow-btn slideshow-next" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services-section">
+    <div style="text-align: center; margin-bottom: 60px; padding: 0 var(--gutter); max-width: var(--max-width); margin-left: auto; margin-right: auto;">
+      <span class="section-label reveal">What We Offer</span>
+      <h2 class="reveal reveal-delay-1">Our Services</h2>
+      <p class="reveal reveal-delay-2" style="color: var(--color-text-muted); max-width: 500px; margin: 0 auto;">Every service is crafted with cinematic precision and artistic vision.</p>
+    </div>
+
+    <div class="services-editorial">
+      <div class="service-spread reveal" style="--spread-aspect: 21 / 9;">
+        <div class="spread-bg">
+          <img src="https://picsum.photos/seed/serv-pw/1600/685" alt="Pre-Wedding Photography" loading="lazy">
+        </div>
+        <div class="spread-overlay"></div>
+        <div class="spread-body spread-body-right">
+          <span class="spread-number">01</span>
+          <span class="spread-label">Pre-Wedding</span>
+          <h3 class="spread-title">Cinematic Love Stories</h3>
+          <p class="spread-desc">Cinematic pre-wedding shoots that capture your love story in the most beautiful locations.</p>
+          <a href="gallery.html" class="spread-link">View Portfolio</a>
+        </div>
+        <div class="spread-accent"></div>
+      </div>
+
+      <div class="service-spread reveal" style="--spread-aspect: 16 / 7;">
+        <div class="spread-bg">
+          <img src="https://picsum.photos/seed/serv-wed/1600/685" alt="Wedding Photography" loading="lazy">
+        </div>
+        <div class="spread-overlay"></div>
+        <div class="spread-body spread-body-left">
+          <span class="spread-number">02</span>
+          <span class="spread-label">Wedding</span>
+          <h3 class="spread-title">The Grand Affair</h3>
+          <p class="spread-desc">End-to-end wedding photography and cinematography. Every moment preserved forever.</p>
+          <a href="gallery.html" class="spread-link">View Portfolio</a>
+        </div>
+        <div class="spread-accent"></div>
+      </div>
+
+      <div class="service-spread reveal" style="--spread-aspect: 21 / 9;">
+        <div class="spread-bg">
+          <img src="https://picsum.photos/seed/serv-bs/1600/685" alt="Baby Shower Photography" loading="lazy">
+        </div>
+        <div class="spread-overlay"></div>
+        <div class="spread-body spread-body-right">
+          <span class="spread-number">03</span>
+          <span class="spread-label">Baby Shower</span>
+          <h3 class="spread-title">Joyful Beginnings</h3>
+          <p class="spread-desc">Beautifully captured baby shower celebrations. Candid moments, pure joy.</p>
+          <a href="gallery.html" class="spread-link">View Portfolio</a>
+        </div>
+        <div class="spread-accent"></div>
+      </div>
+
+      <div class="service-spread reveal" style="--spread-aspect: 16 / 8;">
+        <div class="spread-bg">
+          <img src="https://picsum.photos/seed/serv-sf/1600/685" alt="Short Films" loading="lazy">
+        </div>
+        <div class="spread-overlay"></div>
+        <div class="spread-body spread-body-left">
+          <span class="spread-number">04</span>
+          <span class="spread-label">Short Films</span>
+          <h3 class="spread-title">Stories in Motion</h3>
+          <p class="spread-desc">Cinematic short films that tell your unique story with stunning visuals and narrative.</p>
+          <a href="gallery.html" class="spread-link">View Portfolio</a>
+        </div>
+        <div class="spread-accent"></div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding: 0 var(--gutter);" class="reveal">
+      <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section section-dark" style="text-align: center;">
+    <div class="container">
+      <span class="section-label reveal">Let's Create Together</span>
+      <h2 class="reveal reveal-delay-1" style="margin-bottom: 16px;">Ready to Capture Your Story?</h2>
+      <p class="reveal reveal-delay-2" style="color: var(--color-text-muted); max-width: 480px; margin: 0 auto 32px;">Every great photograph begins with a conversation. Let's talk about your vision.</p>
+      <a href="contact.html" class="btn btn-primary reveal reveal-delay-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Yuvraj Devasr">
+            Yuvraj <span>Devasr</span>
+          </a>
+          <p>Cinematic wedding photography, pre/post-wedding shoots, baby shower photography, and short films.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Explore</div>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Services</div>
+          <a href="gallery.html">Pre-Wedding</a>
+          <a href="gallery.html">Wedding</a>
+          <a href="gallery.html">Post-Wedding</a>
+          <a href="gallery.html">Baby Shower</a>
+          <a href="gallery.html">Short Films</a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Contact</div>
+          <a href="mailto:YuvrajDevasr@gmail.com">YuvrajDevasr@gmail.com</a>
+          <a href="https://wa.me/919345587736" target="_blank">+91 93455 87736</a>
+          <a href="https://maps.google.com/?q=Coimbatore+Tamil+Nadu" target="_blank">Coimbatore, Tamil Nadu</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Yuvraj Devasr. All rights reserved.</span>
+        <span>Crafted with care</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

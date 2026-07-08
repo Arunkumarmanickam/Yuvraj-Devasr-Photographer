@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Yuvraj Devasr</title>
+  <meta name="description" content="Browse our portfolio of wedding, pre-wedding, post-wedding, baby shower photography and short films.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Yuvraj Devasr">
+        Yuvraj <span>Devasr</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== GALLERY SECTIONS ========== -->
+  <section class="gallery-section" data-category="pre-wedding" data-layout="feature-row"><div class="gallery-section-inner"></div></section>
+  <section class="gallery-section" data-category="wedding" data-layout="grid-2x2"><div class="gallery-section-inner"></div></section>
+  <section class="gallery-section" data-category="post-wedding" data-layout="row-3"><div class="gallery-section-inner"></div></section>
+  <section class="gallery-section" data-category="baby-shower" data-layout="split"><div class="gallery-section-inner"></div></section>
+  <section class="gallery-section section-dark" data-category="short-films" data-layout="grid-2x2-play"><div class="gallery-section-inner"></div></section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section section-dark" style="text-align: center;">
+    <div class="container">
+      <span class="section-label reveal">Work With Us</span>
+      <h2 class="reveal reveal-delay-1" style="margin-bottom: 16px;">Like What You See?</h2>
+      <p class="reveal reveal-delay-2" style="color: var(--color-text-muted); max-width: 480px; margin: 0 auto 32px;">Let's create something beautiful together. Reach out and let's discuss your vision.</p>
+      <a href="contact.html" class="btn btn-primary reveal reveal-delay-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Yuvraj Devasr">
+            Yuvraj <span>Devasr</span>
+          </a>
+          <p>Cinematic wedding photography, pre/post-wedding shoots, baby shower photography, and short films. Based in Coimbatore, Tamil Nadu.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Explore</div>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Services</div>
+          <a href="gallery.html">Pre-Wedding</a>
+          <a href="gallery.html">Wedding</a>
+          <a href="gallery.html">Post-Wedding</a>
+          <a href="gallery.html">Baby Shower</a>
+          <a href="gallery.html">Short Films</a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-heading">Contact</div>
+          <a href="mailto:YuvrajDevasr@gmail.com">YuvrajDevasr@gmail.com</a>
+          <a href="https://wa.me/919345587736" target="_blank">+91 93455 87736</a>
+          <a href="https://maps.google.com/?q=Coimbatore+Tamil+Nadu" target="_blank">Coimbatore, Tamil Nadu</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Yuvraj Devasr. All rights reserved.</span>
+        <span>Crafted with care</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next image">&#8594;</button>
+    <img class="lightbox-img" src="" alt="">
+    <span class="lightbox-counter"></span>
+  </div>
+
+  <script src="assets/js/gallery-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
