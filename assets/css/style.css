@@ -180,18 +180,19 @@ h4 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: rgba(10, 14, 26, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 14, 26, 0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: var(--transition);
 }
 
 .nav.scrolled {
   height: var(--nav-height-scrolled);
-  background: rgba(10, 14, 26, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border);
+  background: rgba(10, 14, 26, 0.7);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   isolation: isolate;
 }
 
