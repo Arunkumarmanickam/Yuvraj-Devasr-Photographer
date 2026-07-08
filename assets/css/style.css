@@ -938,63 +938,104 @@ h4 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 /* --- GALLERY RESPONSIVE --- */
 @media (max-width: 768px) {
   .gallery-section {
-    padding: 60px 0 40px;
+    padding: 48px 0 32px;
   }
 
   .gallery-section-header {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+  }
+
+  .layout-feature-row {
+    gap: 3px;
   }
 
   .layout-feature-row .gallery-img-wrap:first-child {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .feature-row-sub {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
   }
 
   .feature-row-sub .gallery-img-wrap {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .layout-grid-2x2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
   }
 
   .layout-grid-2x2 .gallery-img-wrap {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .layout-row-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
   }
 
   .layout-row-3 .gallery-img-wrap {
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .layout-row-3 .gallery-img-wrap:last-child {
+    grid-column: 1 / -1;
     aspect-ratio: 16 / 9;
   }
 
   .layout-grid-2x2-play {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
   }
 
   .layout-grid-2x2-play .gallery-img-wrap {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .split-pair {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
   }
 
   .split-pair .gallery-img-wrap:first-child {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .split-pair .gallery-img-wrap:last-child {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .layout-split > .gallery-img-wrap:last-child {
     aspect-ratio: 16 / 9;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+
+  .layout-split {
+    gap: 0;
+  }
+
+  .play-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 0.9rem;
   }
 }
 
